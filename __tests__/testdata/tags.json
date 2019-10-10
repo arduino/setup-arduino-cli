@@ -1,0 +1,332 @@
+[
+  {
+    "ref": "refs/tags/builder-0.1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmJ1aWxkZXItMC4x",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/builder-0.1",
+    "object": {
+      "sha": "d8a03c228c54d9968fa8f1f3cb5182887107db59",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/d8a03c228c54d9968fa8f1f3cb5182887107db59"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.0.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMC4w",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.0.0",
+    "object": {
+      "sha": "c27f820c8cf244907335aef42f623cd2d611afcf",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/c27f820c8cf244907335aef42f623cd2d611afcf"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.0.1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMC4x",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.0.1",
+    "object": {
+      "sha": "adeb4d57fe14e43ff18e9b025720e02305e12ae4",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/adeb4d57fe14e43ff18e9b025720e02305e12ae4"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.0.2",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMC4y",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.0.2",
+    "object": {
+      "sha": "3741fae2c8e6de3a95c7f4351ee516615596c305",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/3741fae2c8e6de3a95c7f4351ee516615596c305"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.0.3",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMC4z",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.0.3",
+    "object": {
+      "sha": "8c56a4c632902e69ff1a394d314cc4babcb56de4",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/8c56a4c632902e69ff1a394d314cc4babcb56de4"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.1.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMS4w",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.1.0",
+    "object": {
+      "sha": "8fb92a347fae53021e382a8957e1a8890864ec85",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/8fb92a347fae53021e382a8957e1a8890864ec85"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.1.1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMS4x",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.1.1",
+    "object": {
+      "sha": "303b433d235b1d620f6c455b35874eb543f41e7f",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/303b433d235b1d620f6c455b35874eb543f41e7f"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.1.2",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMS4y",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.1.2",
+    "object": {
+      "sha": "e7808386f587562d3997a6fe1e0938ea9656bd08",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/e7808386f587562d3997a6fe1e0938ea9656bd08"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.2.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMi4w",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.2.0",
+    "object": {
+      "sha": "5bc32cac07f40a33a08a7071b847ae7f9c629bc4",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/5bc32cac07f40a33a08a7071b847ae7f9c629bc4"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-0.2.1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTAuMi4x",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-0.2.1",
+    "object": {
+      "sha": "97832143d3c5ec2b0ecb49694d1ab4c411bb9d0e",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/97832143d3c5ec2b0ecb49694d1ab4c411bb9d0e"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-1.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTEuMA==",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-1.0",
+    "object": {
+      "sha": "57bc5199ff667f89b2f882732456e2ff5faf6a2c",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/57bc5199ff667f89b2f882732456e2ff5faf6a2c"
+    }
+  },
+  {
+    "ref": "refs/tags/drone-1.1.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOmRyb25lLTEuMS4w",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/drone-1.1.0",
+    "object": {
+      "sha": "fcc79869ad774bdc1c7ee841e595005d1dc9fce1",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/fcc79869ad774bdc1c7ee841e595005d1dc9fce1"
+    }
+  },
+  {
+    "ref": "refs/tags/test_tag",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOnRlc3RfdGFn",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/test_tag",
+    "object": {
+      "sha": "4c30efaa5ec32e9e5bb5689d65269583f78ab6be",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/4c30efaa5ec32e9e5bb5689d65269583f78ab6be"
+    }
+  },
+  {
+    "ref": "refs/tags/0.1.0-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMS4wLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.1.0-alpha.preview",
+    "object": {
+      "sha": "f46fc3f50c3ec47442ef7296f1cf87e5e2cf474b",
+      "type": "commit",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/commits/f46fc3f50c3ec47442ef7296f1cf87e5e2cf474b"
+    }
+  },
+  {
+    "ref": "refs/tags/0.2.0-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMi4wLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.2.0-alpha.preview",
+    "object": {
+      "sha": "f44aaa57eecbf4e7df1bbcb597e596152e06023a",
+      "type": "commit",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/commits/f44aaa57eecbf4e7df1bbcb597e596152e06023a"
+    }
+  },
+  {
+    "ref": "refs/tags/0.2.1-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMi4xLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.2.1-alpha.preview",
+    "object": {
+      "sha": "55f05b9b57de399019594deba10926c5b7ba4402",
+      "type": "commit",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/commits/55f05b9b57de399019594deba10926c5b7ba4402"
+    }
+  },
+  {
+    "ref": "refs/tags/0.2.2-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMi4yLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.2.2-alpha.preview",
+    "object": {
+      "sha": "cc68e6442ddbc2b5f17c312b2d06840902ba1715",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/cc68e6442ddbc2b5f17c312b2d06840902ba1715"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.0-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy4wLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.0-alpha.preview",
+    "object": {
+      "sha": "e42a18a5d7e558fd5db0a96ca35588c75b058f47",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/e42a18a5d7e558fd5db0a96ca35588c75b058f47"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.1-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy4xLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.1-alpha.preview",
+    "object": {
+      "sha": "616251615c876f666b5183dfa9e25d33a2ac1470",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/616251615c876f666b5183dfa9e25d33a2ac1470"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.2-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy4yLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.2-alpha.preview",
+    "object": {
+      "sha": "f7b379fc22e71574b688ec7c7b730f314d6a2a7f",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/f7b379fc22e71574b688ec7c7b730f314d6a2a7f"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.3-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy4zLWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.3-alpha.preview",
+    "object": {
+      "sha": "99febb216d951e3e8fa766920d08d8c8926da265",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/99febb216d951e3e8fa766920d08d8c8926da265"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.4-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy40LWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.4-alpha.preview",
+    "object": {
+      "sha": "5212732f34956e4ccb4bf7b86b9c09d6392bbdca",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/5212732f34956e4ccb4bf7b86b9c09d6392bbdca"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.5-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy41LWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.5-alpha.preview",
+    "object": {
+      "sha": "33e1e668efcb1be3103e2e4625c08578ad034363",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/33e1e668efcb1be3103e2e4625c08578ad034363"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.6-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy42LWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.6-alpha.preview",
+    "object": {
+      "sha": "03cf35ec360073ce71006c7f45946ef8c33dbb76",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/03cf35ec360073ce71006c7f45946ef8c33dbb76"
+    }
+  },
+  {
+    "ref": "refs/tags/0.3.7-alpha.preview",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuMy43LWFscGhhLnByZXZpZXc=",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.3.7-alpha.preview",
+    "object": {
+      "sha": "4bd22aa88398c3fde089525d0fa7e51d533f296f",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/4bd22aa88398c3fde089525d0fa7e51d533f296f"
+    }
+  },
+  {
+    "ref": "refs/tags/0.4.0-armv6",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNC4wLWFybXY2",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.4.0-armv6",
+    "object": {
+      "sha": "dc3d90671a7ac1ce7afdb46f851badc689a23eda",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/dc3d90671a7ac1ce7afdb46f851badc689a23eda"
+    }
+  },
+  {
+    "ref": "refs/tags/0.4.0-rc1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNC4wLXJjMQ==",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.4.0-rc1",
+    "object": {
+      "sha": "01b66b5b75323be9ef2368f7d7f9d387eefd5207",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/01b66b5b75323be9ef2368f7d7f9d387eefd5207"
+    }
+  },
+  {
+    "ref": "refs/tags/0.4.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNC4w",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.4.0",
+    "object": {
+      "sha": "57e6abb0c4476d5ee5c2651229f6cf68fb81f60b",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/57e6abb0c4476d5ee5c2651229f6cf68fb81f60b"
+    }
+  },
+  {
+    "ref": "refs/tags/0.5.0-preview1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNS4wLXByZXZpZXcx",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.5.0-preview1",
+    "object": {
+      "sha": "95c7e9d4b39a4d2f53a624c9b98a4313d61bd54e",
+      "type": "commit",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/commits/95c7e9d4b39a4d2f53a624c9b98a4313d61bd54e"
+    }
+  },
+  {
+    "ref": "refs/tags/0.5.0-preview2",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNS4wLXByZXZpZXcy",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.5.0-preview2",
+    "object": {
+      "sha": "69822d188e95a0f9a4276c3e0651db1d2774c375",
+      "type": "commit",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/commits/69822d188e95a0f9a4276c3e0651db1d2774c375"
+    }
+  },
+  {
+    "ref": "refs/tags/0.5.0-rc1",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNS4wLXJjMQ==",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.5.0-rc1",
+    "object": {
+      "sha": "bb24a8f962c2e689ed32a08533f205ed03785704",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/bb24a8f962c2e689ed32a08533f205ed03785704"
+    }
+  },
+  {
+    "ref": "refs/tags/0.5.0-rc2",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNS4wLXJjMg==",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.5.0-rc2",
+    "object": {
+      "sha": "4ce9bf0279f7aa03b25eba4b2d7c8a74cbd96846",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/4ce9bf0279f7aa03b25eba4b2d7c8a74cbd96846"
+    }
+  },
+  {
+    "ref": "refs/tags/0.5.0",
+    "node_id": "MDM6UmVmMTQ0MDM2ODMzOjAuNS4w",
+    "url": "https://api.github.com/repos/arduino/arduino-cli/git/refs/tags/0.5.0",
+    "object": {
+      "sha": "b9341da9ff55f7315fe70cd0ab88866d691baa5f",
+      "type": "tag",
+      "url": "https://api.github.com/repos/arduino/arduino-cli/git/tags/b9341da9ff55f7315fe70cd0ab88866d691baa5f"
+    }
+  }
+]

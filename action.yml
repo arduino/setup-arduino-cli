@@ -1,0 +1,10 @@
+name: 'Setup Arduino CLI'
+description: 'Download Arduino CLI and add it to the PATH'
+author: 'Arduino'
+inputs:
+  version:
+    description: 'Version to use. Example: 0.5.0'
+    default: '0.x'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'

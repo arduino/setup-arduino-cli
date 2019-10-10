@@ -1,0 +1,32 @@
+name: Test Action
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Set Node.js 10.x
+        uses: actions/setup-node@1.2.0
+        with:
+          node-version: 10.x
+
+      - name: npm install
+        working-directory: ./setup-arduino-cli
+        run: npm install
+
+      - name: npm lint
+        working-directory: ./setup-arduino-cli
+        run: npm run format-check
+
+      - name: npm test
+        working-directory: ./setup-arduino-cli
+        run: npm test
