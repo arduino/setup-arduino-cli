@@ -1,5 +1,7 @@
 # setup-arduino-cli
 
+[![Actions Status](https://github.com/arduino/setup-arduino-cli/workflows/test/badge.svg)](https://github.com/arduino/setup-arduino-cli/actions)
+
 This action makes the `arduino-cli` tool available to Workflows.
 
 ## Usage
@@ -8,14 +10,14 @@ To get the latest stable version of `arduino-cli` just add this step:
 
 ```yaml
 - name: Install Arduino CLI
-  uses: Arduino/actions/setup-arduino-cli@master
+  uses: arduino/setup-arduino-cli@m1.0.0
 ```
 
 If you want to pin a major or minor version you can use the `.x` wildcard:
 
 ```yaml
 - name: Install Arduino CLI
-  uses: Arduino/actions/setup-arduino-cli@master
+  uses: arduino/setup-arduino-cli@m1.0.0
   with:
     version: '0.x'
 ```
@@ -24,7 +26,7 @@ To pin the exact version:
 
 ```yaml
 - name: Install Arduino CLI
-  uses: Arduino/actions/setup-arduino-cli@master
+  uses: arduino/setup-arduino-cli@m1.0.0
   with:
     version: '0.5.0'
 ```
