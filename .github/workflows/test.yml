@@ -20,13 +20,10 @@ jobs:
           node-version: 10.x
 
       - name: npm install
-        working-directory: ./setup-arduino-cli
         run: npm install
 
       - name: npm lint
-        working-directory: ./setup-arduino-cli
         run: npm run format-check
 
       - name: npm test
-        working-directory: ./setup-arduino-cli
         run: npm test
