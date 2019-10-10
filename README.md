@@ -1,6 +1,6 @@
 # setup-arduino-cli
 
-[![Actions Status](https://github.com/arduino/setup-arduino-cli/workflows/test/badge.svg)](https://github.com/arduino/setup-arduino-cli)
+[![Actions Status](https://github.com/arduino/setup-arduino-cli/workflows/test/badge.svg)](https://github.com/arduino/setup-arduino-cli/actions)
 
 This action makes the `arduino-cli` tool available to Workflows.
 
