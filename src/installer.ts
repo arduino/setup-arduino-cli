@@ -107,9 +107,11 @@ function getFileName(version: string): string {
 async function fetchVersions(): Promise<string[]> {
   let rest: restm.RestClient = new restm.RestClient("setup-arduino-cli");
   let tags: ITaskRef[] =
-    (await rest.get<ITaskRef[]>(
-      "https://api.github.com/repos/Arduino/arduino-cli/git/refs/tags"
-    )).result || [];
+    (
+      await rest.get<ITaskRef[]>(
+        "https://api.github.com/repos/Arduino/arduino-cli/git/refs/tags"
+      )
+    ).result || [];
 
   return tags
     .filter(tag => tag.ref.match(/\d+\.[\w\.]+/g))
