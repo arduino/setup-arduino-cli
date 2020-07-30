@@ -4,7 +4,8 @@ let tempDirectory = process.env["RUNNER_TEMP"] || "";
 import * as os from "os";
 import * as path from "path";
 import * as util from "util";
-import * as restm from "typed-rest-client/RestClient";
+import * as httpm from "@actions/http-client";
+import * as auth from "@actions/http-client/auth";
 import * as semver from "semver";
 
 if (!tempDirectory) {
@@ -24,7 +25,6 @@ if (!tempDirectory) {
 
 import * as core from "@actions/core";
 import * as tc from "@actions/tool-cache";
-import io = require("@actions/io");
 
 let osPlat: string = os.platform();
 let osArch: string = os.arch();
@@ -63,7 +63,8 @@ async function downloadRelease(version: string): Promise<string> {
   );
   let downloadPath: string | null = null;
   try {
-    downloadPath = await tc.downloadTool(downloadUrl);
+    const token: string = core.getInput("token", { required: true });
+    downloadPath = await tc.downloadTool(downloadUrl, undefined, token);
   } catch (error) {
     core.debug(error);
     throw `Failed to download version ${version}: ${error}`;
@@ -105,10 +106,14 @@ function getFileName(version: string): string {
 
 // Retrieve a list of versions scraping tags from the Github API
 async function fetchVersions(): Promise<string[]> {
-  let rest: restm.RestClient = new restm.RestClient("setup-arduino-cli");
+  const token: string = core.getInput("token", { required: true });
+  const authHandler = new auth.PersonalAccessTokenCredentialHandler(token);
+  let rest: httpm.HttpClient = new httpm.HttpClient("setup-arduino-cli", [
+    authHandler
+  ]);
   let tags: ITaskRef[] =
     (
-      await rest.get<ITaskRef[]>(
+      await rest.getJson<ITaskRef[]>(
         "https://api.github.com/repos/Arduino/arduino-cli/git/refs/tags"
       )
     ).result || [];

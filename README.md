@@ -39,11 +39,13 @@ To work on the codebase you have to install all the dependencies:
 # npm install
 ```
 
-To run the tests:
+To run tests set the environment variable `GITHUB_TOKEN` with a valid Personal Access Token and then:
 
 ```sh
 # npm run test
 ```
+
+See the [official Github documentation][pat-docs] to know more about Personal Access Tokens.
 
 ## Release
 
@@ -53,3 +55,5 @@ To run the tests:
 4. `npm run pack` to package for distribution
 5. `git add src dist` to check in the code that matters.
 6. open a PR and request a review.
+
+[pat-docs]: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
