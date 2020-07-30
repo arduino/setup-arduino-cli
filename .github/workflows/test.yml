@@ -6,6 +6,9 @@ jobs:
   test:
     runs-on: ${{ matrix.operating-system }}
 
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+
     strategy:
       matrix:
         operating-system: [ubuntu-latest, windows-latest]
