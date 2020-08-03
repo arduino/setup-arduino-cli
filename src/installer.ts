@@ -61,6 +61,7 @@ async function downloadRelease(version: string): Promise<string> {
     version,
     fileName
   );
+  core.debug("Downloading " + downloadUrl);
   let downloadPath: string | null = null;
   try {
     const token: string = core.getInput("token", { required: true });
