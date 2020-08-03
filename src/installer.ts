@@ -61,6 +61,7 @@ async function downloadRelease(version: string): Promise<string> {
     version,
     fileName
   );
+  core.debug("Downloading " + downloadUrl);
   let downloadPath: string | null = null;
   try {
     const token: string = core.getInput("token", { required: true });
@@ -83,7 +84,7 @@ async function downloadRelease(version: string): Promise<string> {
 }
 
 function getFileName(version: string): string {
-  const arch: string = osArch == "x64" ? "64bit" : "32bit";
+  let arch = "";
   let platform = "";
   let ext = "";
   switch (osPlat) {
@@ -98,6 +99,21 @@ function getFileName(version: string): string {
     case "darwin":
       platform = "macOS";
       ext = "tar.gz";
+      break;
+  }
+
+  switch (osArch) {
+    case "x32":
+      arch = "32bit";
+      break;
+    case "x64":
+      arch = "64bit";
+      break;
+    case "arm":
+      arch = "ARMv7";
+      break;
+    case "arm64":
+      arch = "ARM64";
       break;
   }
 
