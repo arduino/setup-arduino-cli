@@ -33,8 +33,8 @@ To pin the exact version:
 
 ## Examples
 
-[Here][pat-example] there is a good example on how to use the action.
-See also the [Arduino on GitHub Actions blogpost][pat-blogpost] to learn more.
+[Here][example] there is a good example on how to use the action.
+See also the [Arduino on GitHub Actions blogpost][blogpost] to learn more.
 
 ## Development
 
@@ -62,5 +62,5 @@ See the [official Github documentation][pat-docs] to know more about Personal Ac
 6. open a PR and request a review.
 
 [pat-docs]: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
-[pat-example]: https://github.com/arduino/arduino-cli-example/blob/master/.github/workflows/test.yaml
-[pat-blogpost]: https://blog.arduino.cc/2019/11/14/arduino-on-github-actions/
+[example]: https://github.com/arduino/arduino-cli-example/blob/master/.github/workflows/test.yaml
+[blogpost]: https://blog.arduino.cc/2019/11/14/arduino-on-github-actions/
