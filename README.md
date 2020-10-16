@@ -10,14 +10,14 @@ To get the latest stable version of `arduino-cli` just add this step:
 
 ```yaml
 - name: Install Arduino CLI
-  uses: arduino/setup-arduino-cli@v1.0.0
+  uses: arduino/setup-arduino-cli@v1.1.0
 ```
 
 If you want to pin a major or minor version you can use the `.x` wildcard:
 
 ```yaml
 - name: Install Arduino CLI
-  uses: arduino/setup-arduino-cli@v1.0.0
+  uses: arduino/setup-arduino-cli@v1.1.0
   with:
     version: "0.x"
 ```
@@ -26,7 +26,7 @@ To pin the exact version:
 
 ```yaml
 - name: Install Arduino CLI
-  uses: arduino/setup-arduino-cli@v1.0.0
+  uses: arduino/setup-arduino-cli@v1.1.0
   with:
     version: "0.5.0"
 ```
