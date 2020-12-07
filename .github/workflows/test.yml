@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Set Node.js 10.x
-        uses: actions/setup-node@v1.2.0
+        uses: actions/setup-node@v1.4.4
         with:
           node-version: 10.x
 
