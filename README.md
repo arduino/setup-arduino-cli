@@ -64,3 +64,11 @@ See the [official Github documentation][pat-docs] to know more about Personal Ac
 [pat-docs]: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 [example]: https://github.com/arduino/arduino-cli-example/blob/master/.github/workflows/test.yaml
 [blogpost]: https://blog.arduino.cc/2019/11/14/arduino-on-github-actions/
+
+## Security
+
+If you think you found a vulnerability or other security-related bug in this project, please read our
+[security policy](https://github.com/arduino/setup-arduino-cli/security/policy) and report the bug to our Security Team 🛡️
+Thank you!
+
+e-mail contact: security@arduino.cc
