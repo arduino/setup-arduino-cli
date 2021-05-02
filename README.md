@@ -59,7 +59,13 @@ See the [official Github documentation][pat-docs] to know more about Personal Ac
 3. `npm run test` to see everything works as expected.
 4. `npm run pack` to package for distribution
 5. `git add src dist` to check in the code that matters.
-6. open a PR and request a review.
+6. If the release will increment the major version, update the action refs in the examples in README.md
+   (e.g., `uses: arduino/setup-arduino-cli@v1` -> `uses: arduino/setup-arduino-cli@v2`).
+7. open a PR and request a review.
+8. After PR is merged, create a release, following the `vX.Y.Z` tag name convention.
+9. After the release, rebase the release branch for that major version (e.g., `v1` branch for the v1.x.x tags) on the
+   tag. If no branch exists for the release's major version, create one.
+
 
 [pat-docs]: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 [example]: https://github.com/arduino/arduino-cli-example/blob/master/.github/workflows/test.yaml
