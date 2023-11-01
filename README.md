@@ -31,6 +31,19 @@ To pin the exact version:
     version: "0.5.0"
 ```
 
+### Self-Hosted Actions
+For actions run through gitea, or using CI/CD nektos/act, this action will fail as github token will be wrong when trying to download arduino-cli. Producing a `::error::Bad credentials` error 
+
+To avoid this action failing, [make a Github Token from github developer settings](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), saving it using a secret variable (example below using `TOKEN_FOR_GITHUB`).
+
+Then add an env variable to the step, called INPUT_TOKEN and have that equal the secret, as shown below
+```yaml
+- name: Setup Arduino CLI
+  uses: arduino/setup-arduino-cli@v1.1.1
+  env:
+    INPUT_TOKEN: ${{ secrets.TOKEN_FOR_GITHUB  }}
+```
+
 ## Examples
 
 [Here][example] there is a good example on how to use the action.
@@ -78,3 +91,5 @@ If you think you found a vulnerability or other security-related bug in this pro
 Thank you!
 
 e-mail contact: security@arduino.cc
+
+
