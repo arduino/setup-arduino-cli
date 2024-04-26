@@ -5,7 +5,7 @@ import * as os from "os";
 import * as path from "path";
 import * as util from "util";
 import * as httpm from "@actions/http-client";
-import * as auth from "@actions/http-client/auth";
+import * as auth from "@actions/http-client/lib/auth";
 import * as semver from "semver";
 
 if (!tempDirectory) {
@@ -66,7 +66,7 @@ async function downloadRelease(version: string): Promise<string> {
   try {
     const token: string = core.getInput("token", { required: true });
     downloadPath = await tc.downloadTool(downloadUrl, undefined, token);
-  } catch (error) {
+  } catch (error: any) {
     core.debug(error);
     throw `Failed to download version ${version}: ${error}`;
   }
