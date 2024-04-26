@@ -8,7 +8,7 @@ async function run() {
     if (version) {
       await installer.getArduinoCli(version);
     }
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error.message);
   }
 }
