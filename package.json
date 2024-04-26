@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
+    "format-check": "prettier --end-of-line auto --check **/*.ts",
     "pack": "ncc build",
     "test": "jest"
   },
