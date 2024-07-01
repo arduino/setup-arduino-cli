@@ -86,7 +86,7 @@ describe("installer tests", () => {
 
     it("Gets latest version of Task using 0.x and no matching version is installed", async () => {
       await installer.getArduinoCli("0.x");
-      const bindir = path.join(toolDir, "arduino-cli", "0.5.0", os.arch());
+      const bindir = path.join(toolDir, "arduino-cli", "0.34.2", os.arch());
 
       expect(fs.existsSync(`${bindir}.complete`)).toBe(true);
       if (IS_WINDOWS) {
