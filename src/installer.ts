@@ -5,7 +5,7 @@ import * as os from "os";
 import * as path from "path";
 import * as util from "util";
 import * as httpm from "@actions/http-client";
-import * as auth from "@actions/http-client/auth";
+import * as auth from "@actions/http-client/lib/auth";
 import * as semver from "semver";
 
 if (!tempDirectory) {
@@ -59,14 +59,14 @@ async function downloadRelease(version: string): Promise<string> {
   let downloadUrl: string = util.format(
     "https://github.com/Arduino/arduino-cli/releases/download/%s/%s",
     version,
-    fileName
+    fileName,
   );
   core.debug("Downloading " + downloadUrl);
   let downloadPath: string | null = null;
   try {
     const token: string = core.getInput("token", { required: true });
     downloadPath = await tc.downloadTool(downloadUrl, undefined, token);
-  } catch (error) {
+  } catch (error: any) {
     core.debug(error);
     throw `Failed to download version ${version}: ${error}`;
   }
@@ -125,18 +125,18 @@ async function fetchVersions(): Promise<string[]> {
   const token: string = core.getInput("token", { required: true });
   const authHandler = new auth.PersonalAccessTokenCredentialHandler(token);
   let rest: httpm.HttpClient = new httpm.HttpClient("setup-arduino-cli", [
-    authHandler
+    authHandler,
   ]);
   let tags: ITaskRef[] =
     (
       await rest.getJson<ITaskRef[]>(
-        "https://api.github.com/repos/Arduino/arduino-cli/git/refs/tags"
+        "https://api.github.com/repos/Arduino/arduino-cli/git/refs/tags",
       )
     ).result || [];
 
   return tags
-    .filter(tag => tag.ref.match(/\d+\.[\w\.]+/g))
-    .map(tag => tag.ref.replace("refs/tags/", ""));
+    .filter((tag) => tag.ref.match(/\d+\.[\w\.]+/g))
+    .map((tag) => tag.ref.replace("refs/tags/", ""));
 }
 
 // Compute an actual version starting from the `version` configuration param.
@@ -147,14 +147,14 @@ async function computeVersion(version: string): Promise<string> {
   }
 
   const allVersions = await fetchVersions();
-  const possibleVersions = allVersions.filter(v => v.startsWith(version));
+  const possibleVersions = allVersions.filter((v) => v.startsWith(version));
 
   const versionMap = new Map();
-  possibleVersions.forEach(v => versionMap.set(normalizeVersion(v), v));
+  possibleVersions.forEach((v) => versionMap.set(normalizeVersion(v), v));
 
   const versions = Array.from(versionMap.keys())
     .sort(semver.rcompare)
-    .map(v => versionMap.get(v));
+    .map((v) => versionMap.get(v));
 
   core.debug(`evaluating ${versions.length} versions`);
 
@@ -179,7 +179,7 @@ function normalizeVersion(version: string): string {
   } else {
     // handle beta and rc
     // e.g. 1.10beta1 -? 1.10.0-beta1, 1.10rc1 -> 1.10.0-rc1
-    if (preStrings.some(el => versionPart[1].includes(el))) {
+    if (preStrings.some((el) => versionPart[1].includes(el))) {
       versionPart[1] = versionPart[1]
         .replace("beta", ".0-beta")
         .replace("rc", ".0-rc")
@@ -195,7 +195,7 @@ function normalizeVersion(version: string): string {
   } else {
     // handle beta and rc
     // e.g. 1.8.5beta1 -> 1.8.5-beta1, 1.8.5rc1 -> 1.8.5-rc1
-    if (preStrings.some(el => versionPart[2].includes(el))) {
+    if (preStrings.some((el) => versionPart[2].includes(el))) {
       versionPart[2] = versionPart[2]
         .replace("beta", "-beta")
         .replace("rc", "-rc")

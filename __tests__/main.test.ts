@@ -16,11 +16,11 @@ import * as installer from "../src/installer";
 
 // Inputs for mock @actions/core
 let inputs = {
-  token: process.env.GITHUB_TOKEN || ""
+  token: process.env.GITHUB_TOKEN || "",
 } as any;
 
 describe("installer tests", () => {
-  beforeEach(async function() {
+  beforeEach(async function () {
     // Mock getInput
     jest.spyOn(core, "getInput").mockImplementation((name: string) => {
       return inputs[name];
