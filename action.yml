@@ -3,8 +3,8 @@ description: "Download Arduino CLI and add it to the PATH"
 author: "Arduino"
 inputs:
   version:
-    description: "Version to use. Example: 0.5.0"
-    default: "0.x"
+    description: "Version to use. Example: (1.0.1, 1.0.x, 1.x)"
+    default: "1.x"
   token:
     description: "Personal access token (PAT) used to call the Github API."
     required: false
