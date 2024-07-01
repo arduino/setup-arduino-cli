@@ -1,9 +1,9 @@
-import core = require("@actions/core");
-import io = require("@actions/io");
-import path = require("path");
-import os = require("os");
-import fs = require("fs");
-import nock = require("nock");
+import * as core from "@actions/core";
+import * as io from "@actions/io";
+import * as path from "path";
+import * as os from "os";
+import * as fs from "fs";
+import nock from "nock";
 
 const toolDir = path.join(__dirname, "runner", "tools");
 const tempDir = path.join(__dirname, "runner", "temp");
