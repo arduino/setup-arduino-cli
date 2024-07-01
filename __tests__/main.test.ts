@@ -1,9 +1,9 @@
-import core = require("@actions/core");
-import io = require("@actions/io");
-import path = require("path");
-import os = require("os");
-import fs = require("fs");
-import nock = require("nock");
+import * as core from "@actions/core";
+import * as io from "@actions/io";
+import * as path from "path";
+import * as os from "os";
+import * as fs from "fs";
+import nock from "nock";
 
 const toolDir = path.join(__dirname, "runner", "tools");
 const tempDir = path.join(__dirname, "runner", "temp");
@@ -84,9 +84,50 @@ describe("installer tests", () => {
       }
     }, 20000);
 
-    it("Gets latest version of Task using 0.x and no matching version is installed", async () => {
+    it("Gets the latest version of Arduino CLI v1.0.0 using 1.0.0 with no `v` prefix", async () => {
+      await installer.getArduinoCli("1.0.0");
+      const bindir = path.join(toolDir, "arduino-cli", "1.0.0", os.arch());
+
+      expect(fs.existsSync(`${bindir}.complete`)).toBe(true);
+      if (IS_WINDOWS) {
+        expect(fs.existsSync(path.join(bindir, "arduino-cli.exe"))).toBe(true);
+      } else {
+        expect(fs.existsSync(path.join(bindir, "arduino-cli"))).toBe(true);
+      }
+    }, 20000);
+
+    it("Gets the latest version of Arduino CLI v1.0.0 using the `v` prefix (v1.0.0)", async () => {
+      await installer.getArduinoCli("v1.0.0");
+      const bindir = path.join(toolDir, "arduino-cli", "1.0.0", os.arch());
+
+      expect(fs.existsSync(`${bindir}.complete`)).toBe(true);
+      if (IS_WINDOWS) {
+        expect(fs.existsSync(path.join(bindir, "arduino-cli.exe"))).toBe(true);
+      } else {
+        expect(fs.existsSync(path.join(bindir, "arduino-cli"))).toBe(true);
+      }
+    }, 20000);
+
+    it("Gets the latest version of Arduino CLI using the v1.x", async () => {
+      await installer.getArduinoCli("v1.x");
+      const bindir = path.join(toolDir, "arduino-cli", "1.0.1", os.arch());
+
+      expect(fs.existsSync(`${bindir}.complete`)).toBe(true);
+      if (IS_WINDOWS) {
+        expect(fs.existsSync(path.join(bindir, "arduino-cli.exe"))).toBe(true);
+      } else {
+        expect(fs.existsSync(path.join(bindir, "arduino-cli"))).toBe(true);
+      }
+    }, 20000);
+
+    it("Gets latest version of Arduino CLI using 0.x and no matching version is installed", async () => {
       await installer.getArduinoCli("0.x");
-      const bindir = path.join(toolDir, "arduino-cli", "0.5.0", os.arch());
+      const bindir = path.join(
+        toolDir,
+        "arduino-cli",
+        "0.36.0-rc.2",
+        os.arch(),
+      );
 
       expect(fs.existsSync(`${bindir}.complete`)).toBe(true);
       if (IS_WINDOWS) {

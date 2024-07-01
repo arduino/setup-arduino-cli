@@ -117,6 +117,11 @@ function getFileName(version: string): string {
       break;
   }
 
+  // Newer versions of the cli are tagged with the `v` prefix, but the artifacts
+  // don't containt that prefix, so we normalize the version.
+  if (version.startsWith("v")) {
+    version = version.substring(1);
+  }
   return util.format("arduino-cli_%s_%s_%s.%s", version, platform, arch, ext);
 }
 
@@ -141,13 +146,25 @@ async function fetchVersions(): Promise<string[]> {
 
 // Compute an actual version starting from the `version` configuration param.
 async function computeVersion(version: string): Promise<string> {
+  // remove the v prefix. This is done for backwards compatibility reasion.
+  // Newer releases of the cli are tagged with the v prefix, but not the older
+  // ones.
+  if (version.startsWith("v")) {
+    version = version.substring(1);
+  }
+
   // strip trailing .x chars
   if (version.endsWith(".x")) {
     version = version.slice(0, version.length - 2);
   }
 
   const allVersions = await fetchVersions();
-  const possibleVersions = allVersions.filter((v) => v.startsWith(version));
+  const possibleVersions = allVersions.filter(function (v) {
+    if (v.startsWith("v")) {
+      return v.startsWith("v" + version);
+    }
+    return v.startsWith(version);
+  });
 
   const versionMap = new Map();
   possibleVersions.forEach((v) => versionMap.set(normalizeVersion(v), v));
