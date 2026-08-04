@@ -147,7 +147,7 @@ function getFileName(version) {
             break;
     }
     // Newer versions of the cli are tagged with the `v` prefix, but the artifacts
-    // doesn't containt that prefix, se we normalize the version.
+    // don't containt that prefix, so we normalize the version.
     if (version.startsWith("v")) {
         version = version.substring(1);
     }
